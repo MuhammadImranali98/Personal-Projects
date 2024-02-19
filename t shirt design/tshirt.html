@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <title>T-Shirt Designer</title>
+    <link href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css" rel="stylesheet"
+        type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="tshirt.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./yellow.png">
+</head>
+
+<body>
+
+    <main>
+        <div class="header">
+            <h1>
+
+                <p> <i class="mdi mdi-tshirt-v" style="color: rgb(53, 121, 210) ;"></i>T-Shirt <span style="color: rgb(53, 121, 210)
+               ;">Designer</span></p>
+            </h1>
+        </div>
+        <div class="bodyHeader">
+            <div class="shirtMain">
+                <div class="shirt">
+                    <img src="black.png" id="pic">
+                    <div id="letter">
+                        <p id="data"></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section2">
+                <div class="sVarient">
+                    <h4>Shirt Variant</h4>
+                </div>
+                <div class="cButtons">
+                    <button id="bBlack" class="btn" onclick="change1()" style="background: black;"></button>
+                    <button id="bGray" class="btn" onclick="change2()" style="background: gray;"></button>
+                    <button id="bPurple" class="btn" onclick="change3()" style="background: purple;"></button>
+                    <button id="bGreen" class="btn" onclick="change4()" style="background:green;"></button>
+                    <button id="bYellow" class="btn" onclick="change5()" style="background: yellow;"></button>
+                </div>
+                <hr class="styleHR">
+                <div id="textS" >
+                    <p style="font-size: 18px; "><b>Text style</b></p>
+                </div>
+                <div><textarea name="tarea" style="resize:none ;" oninput="changeText()" id="tstyle" cols="50" rows="3" placeholder="enter text"></textarea ></div>
+                <div class="Dbutton">
+                    <input type="color" id="favcolor" oninput="changeColor()" value="#ffffff" name="favcolor" class="sbtn">
+                    <button id="bold" class="sbtn" onclick="boldText()"><b>B</b></button>
+                    <button id="itelic" class="sbtn" onclick="italicText() "><i>I</i></button>
+                    <button id="align1" class="sbtn" onclick=" allignLeft()"><i class="icon-align-left"></i></button>
+                    <button id="align2" class="sbtn" onclick="alligncenter() "><i class="icon-align-center"></i></button>
+                    <button id="align3" class="sbtn" onclick="allignRight() "><i class="icon-align-right"></i></button>
+                </div>
+
+
+                <div class="sizeButton">
+                    <div>
+                        <p id="textSize"><b>Text size</b></p>
+                    </div>
+                    <div class="btn1">
+                        <button id="plus" class="sbtn" onclick="fontsize(id) ">+</button>
+                        <input id="custom" onchange="fontsize(id)" type="text" maxlength="2"
+                         class="upper-properties" style="text-align: center;" value="15" placeholder="px">
+                        <button id="minus" onclick="fontsize(id)" class="sbtn">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="fotter">
+        <div class="icon">
+            <img src="icon.png" id="icon1">
+        </div>
+        <div class="icontext">
+            <div class="appmakers">&copy; AppMakers 2020</div>
+            <div class="rights">All Rights Reserved</div>
+        </div>
+    </div>
+
+
+
+    <script src="tshirt.js"></script>
+
+</body>

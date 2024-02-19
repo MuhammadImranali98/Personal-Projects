@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+   
+
+}
+.body {
+    background: url(bg.png); 
+    background-repeat: no-repeat;                             
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 100vw 100vh
+
+   
+   
+}
+#mani{
+
+    position: absolute;
+    display: flex;
+    font-size: 39px;
+    left: 70px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    border: 10px inset rgb(117, 49, 49);
+    background-color: rgb(45, 133, 104);
+    padding: 15px;
+    border-radius: 30px;
+    color: aqua;
+    animation: myfirst 10s linear 3s infinite alternate;
+
+    /* border-style: solid|double| dotted| groove| dashed| none; */
+}
+#mani:hover{
+    opacity: 0.9;
+}
+#scoreBox{
+    position: absolute;
+    font-size: 39px;
+    top:9px;
+    right: 200px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif
+}
+#hiscoreBox{
+    position: absolute;
+    font-size: 39px;
+    top:55px;
+    right: 150px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif
+}
+
+
+#board{
+    background: linear-gradient(rgb(212, 225, 212),rgb(207, 218, 206));
+    border: 2px solid black;
+    height: 90vmin;
+    width: 92vmin;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.head{
+    background:linear-gradient(red,yellow);
+    border: .25vmin solid rgb(177, 14, 241);
+    border-radius: 8px;
+    transform: scale(1.02);
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+
+}
+.food {
+    background:linear-gradient(rgb(255, 0, 119),rgb(217, 89, 239));
+    border: .25vmin solid rgb(13, 13, 13);
+    border-radius: 8px;
+}
+
+@keyframes myfirst {
+    0%   {background-color:rgb(232, 10, 10); left:0px; top:0px;}
+    25%  {background-color:yellow; left:100px; top:0px;}
+    50%  {background-color:rgb(15, 15, 201); left:100px; top:600px;}
+    75%  {background-color:rgb(8, 88, 8); left:0px; top:200px;}
+    100% {background-color:rgb(15, 12, 12); left:0px; top:0px;}
+  }
